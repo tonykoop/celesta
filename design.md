@@ -17,9 +17,10 @@ is suspended at support points that preserve vibration while keeping the bar
 stable under repeated impact. Below the bar, a resonator box reinforces the
 sound. A damper controls sustain and release when the key is lifted.
 
-This L1 packet does not choose final bar geometry, pitch range, resonator
-volume, hammer mass, felt hardness, key count, or action ratio. Those values
-need measured or reviewed authority before a build packet can advance.
+This L2 packet names the review surfaces and test gates, but it does not choose
+final bar geometry, pitch range, resonator volume, hammer mass, felt hardness,
+key count, or action ratio. Those values need measured or reviewed authority
+before any build-ready packet can advance.
 
 ## Subsystems
 
@@ -33,6 +34,10 @@ need measured or reviewed authority before a build packet can advance.
   are unresolved.
 - Action geometry is pending measurement and should not be copied from a
   drawing without review.
+- L2 evidence target: a small key-action mule that records key feel, hammer
+  travel, rebound, checking, damper timing, regulation access, and noise.
+- Authority boundary: no key count, spacing, lever ratio, pivot position, or
+  spring force is released.
 
 ### Felt Hammers
 
@@ -41,9 +46,13 @@ need measured or reviewed authority before a build packet can advance.
 - The hammer should excite the bar without staying in contact long enough to
   choke the sound.
 - Strike position is a future setup parameter, not a released location in this
-  L1 packet.
+  L2 packet.
 - A first prototype should compare hammer coverings and rebound behavior before
   scaling to a full keyboard.
+- L2 evidence target: hammer material and rebound comparison notes against a
+  single trial bar.
+- Authority boundary: no hammer mass, felt hardness, strike point, or voicing
+  target is released.
 
 ### Steel Bars
 
@@ -53,6 +62,10 @@ need measured or reviewed authority before a build packet can advance.
 - Bar tuning is intentionally not specified here.
 - Future design work should separate raw bar blank preparation from final
   tuning and voicing.
+- L2 evidence target: a bar coupon log for sustain, decay, tuning response,
+  support sensitivity, surface condition, and repeatable strike behavior.
+- Authority boundary: no bar length, width, thickness, profile, material grade,
+  pitch, or undercutting geometry is released.
 
 ### Resonator Boxes
 
@@ -62,6 +75,11 @@ need measured or reviewed authority before a build packet can advance.
 - Resonators must be accessible enough for inspection and adjustment during
   prototype work.
 - No resonator dimensions or tuning values are claimed here.
+- L2 evidence target: a resonator comparison using the same bar coupon so
+  loudness, color, sustain, and coupling can be observed before dimensions are
+  chosen.
+- Authority boundary: no resonator volume, opening, wall thickness, or placement
+  is released.
 
 ### Dampers
 
@@ -70,6 +88,10 @@ need measured or reviewed authority before a build packet can advance.
 - The damper system must work with hammer rebound and bar sustain, not fight
   them.
 - Release noise should be treated as a validation item.
+- L2 evidence target: damper material and lift-timing notes from the action mule
+  and bar coupon.
+- Authority boundary: no damper material, lift distance, timing, or geometry is
+  released.
 
 ### Frame And Service Access
 
@@ -78,6 +100,10 @@ need measured or reviewed authority before a build packet can advance.
 - Service access matters because bars, hammers, dampers, and resonators all
   need adjustment during prototype work.
 - Transport stability, dust protection, and cover design are future questions.
+- L2 evidence target: an interface map that separates bar support, hammer
+  access, resonator clearance, damper regulation, and service cover removal.
+- Authority boundary: no case dimensions, frame stock, joinery, or fabrication
+  release is provided.
 
 ## Parametric Intent
 
@@ -109,9 +135,20 @@ performance targets.
 - Service test: confirm bars, hammers, dampers, and resonators are reachable for
   regulation.
 
-## L1 Boundary
+## L2 Packet Gates
 
-This design study is a concept map. It does not define a scale, tuning system,
+| Gate | Current authority | Promotion evidence |
+| --- | --- | --- |
+| Bar coupon | pending_measurement | Measured sustain, decay, support sensitivity, tuning response, and strike repeatability. |
+| Hammer comparison | pending_measurement | Rebound and tone notes from alternate felt/contact materials against one trial bar. |
+| Action mule | pending_measurement | Key feel, hammer travel, checking, damper timing, and regulation access observations. |
+| Resonator comparison | pending_measurement | Side-by-side notes with no claimed tuned volumes or final dimensions. |
+| Damper release | pending_measurement | Clean stop and release-noise observations under repeatable key action. |
+| CAD/drawings | pending_measurement | Reviewed CAD, DXF, or drawing authority after measured parameters exist. |
+
+## L2 Boundary
+
+This design study is a build-packet candidate. It names subsystems, coupon
+classes, and measurement gates, but it does not define a scale, tuning system,
 bar geometry, resonator geometry, action drawing, CAD model, DXF, or fabrication
 release.
-
