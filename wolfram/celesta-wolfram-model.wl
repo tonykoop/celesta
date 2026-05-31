@@ -158,3 +158,5 @@ celestaModel = <|
    "nominalEstimate" -> celestaNominalEstimate,
    "explorer" -> celestaExplorer
    |>;
+
+celestaModel
